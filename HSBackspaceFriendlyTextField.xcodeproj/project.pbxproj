@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B782C942145D0BB2003EC53D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B782C941145D0BB2003EC53D /* UIKit.framework */; };
+		B782C944145D0BB2003EC53D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B782C943145D0BB2003EC53D /* Foundation.framework */; };
+		B782C946145D0BB2003EC53D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B782C945145D0BB2003EC53D /* CoreGraphics.framework */; };
+		B782C94C145D0BB2003EC53D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B782C94A145D0BB2003EC53D /* InfoPlist.strings */; };
+		B782C94E145D0BB2003EC53D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B782C94D145D0BB2003EC53D /* main.m */; };
+		B782C952145D0BB2003EC53D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B782C951145D0BB2003EC53D /* AppDelegate.m */; };
+		B782C955145D0BB2003EC53D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B782C954145D0BB2003EC53D /* ViewController.m */; };
+		B782C958145D0BB2003EC53D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B782C956145D0BB2003EC53D /* ViewController.xib */; };
+		B782C960145D0C28003EC53D /* HSBackspaceFriendlyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B782C95F145D0C28003EC53D /* HSBackspaceFriendlyTextField.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B782C93D145D0BB1003EC53D /* HSBackspaceFriendlyTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSBackspaceFriendlyTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B782C941145D0BB2003EC53D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B782C943145D0BB2003EC53D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B782C945145D0BB2003EC53D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B782C949145D0BB2003EC53D /* HSBackspaceFriendlyTextField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HSBackspaceFriendlyTextField-Info.plist"; sourceTree = "<group>"; };
+		B782C94B145D0BB2003EC53D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B782C94D145D0BB2003EC53D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B782C94F145D0BB2003EC53D /* HSBackspaceFriendlyTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSBackspaceFriendlyTextField-Prefix.pch"; sourceTree = "<group>"; };
+		B782C950145D0BB2003EC53D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B782C951145D0BB2003EC53D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B782C953145D0BB2003EC53D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B782C954145D0BB2003EC53D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B782C957145D0BB2003EC53D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B782C95E145D0C28003EC53D /* HSBackspaceFriendlyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBackspaceFriendlyTextField.h; sourceTree = "<group>"; };
+		B782C95F145D0C28003EC53D /* HSBackspaceFriendlyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBackspaceFriendlyTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B782C93A145D0BB1003EC53D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B782C942145D0BB2003EC53D /* UIKit.framework in Frameworks */,
+				B782C944145D0BB2003EC53D /* Foundation.framework in Frameworks */,
+				B782C946145D0BB2003EC53D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7112BA8146272B500786BA2 /* HSBackspaceFriendlyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				B782C95E145D0C28003EC53D /* HSBackspaceFriendlyTextField.h */,
+				B782C95F145D0C28003EC53D /* HSBackspaceFriendlyTextField.m */,
+			);
+			name = HSBackspaceFriendlyTextField;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B782C932145D0BB1003EC53D = {
+			isa = PBXGroup;
+			children = (
+				B7112BA8146272B500786BA2 /* HSBackspaceFriendlyTextField */,
+				B782C947145D0BB2003EC53D /* Demo */,
+				B782C940145D0BB2003EC53D /* Frameworks */,
+				B782C93E145D0BB1003EC53D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B782C93E145D0BB1003EC53D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B782C93D145D0BB1003EC53D /* HSBackspaceFriendlyTextField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B782C940145D0BB2003EC53D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B782C941145D0BB2003EC53D /* UIKit.framework */,
+				B782C943145D0BB2003EC53D /* Foundation.framework */,
+				B782C945145D0BB2003EC53D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B782C947145D0BB2003EC53D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B782C950145D0BB2003EC53D /* AppDelegate.h */,
+				B782C951145D0BB2003EC53D /* AppDelegate.m */,
+				B782C953145D0BB2003EC53D /* ViewController.h */,
+				B782C954145D0BB2003EC53D /* ViewController.m */,
+				B782C956145D0BB2003EC53D /* ViewController.xib */,
+				B782C948145D0BB2003EC53D /* Supporting Files */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		B782C948145D0BB2003EC53D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B782C949145D0BB2003EC53D /* HSBackspaceFriendlyTextField-Info.plist */,
+				B782C94A145D0BB2003EC53D /* InfoPlist.strings */,
+				B782C94D145D0BB2003EC53D /* main.m */,
+				B782C94F145D0BB2003EC53D /* HSBackspaceFriendlyTextField-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B782C93C145D0BB1003EC53D /* HSBackspaceFriendlyTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B782C95B145D0BB2003EC53D /* Build configuration list for PBXNativeTarget "HSBackspaceFriendlyTextField" */;
+			buildPhases = (
+				B782C939145D0BB1003EC53D /* Sources */,
+				B782C93A145D0BB1003EC53D /* Frameworks */,
+				B782C93B145D0BB1003EC53D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSBackspaceFriendlyTextField;
+			productName = Backspace;
+			productReference = B782C93D145D0BB1003EC53D /* HSBackspaceFriendlyTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B782C934145D0BB1003EC53D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Instructure;
+			};
+			buildConfigurationList = B782C937145D0BB1003EC53D /* Build configuration list for PBXProject "HSBackspaceFriendlyTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B782C932145D0BB1003EC53D;
+			productRefGroup = B782C93E145D0BB1003EC53D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B782C93C145D0BB1003EC53D /* HSBackspaceFriendlyTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B782C93B145D0BB1003EC53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B782C94C145D0BB2003EC53D /* InfoPlist.strings in Resources */,
+				B782C958145D0BB2003EC53D /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B782C939145D0BB1003EC53D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B782C94E145D0BB2003EC53D /* main.m in Sources */,
+				B782C952145D0BB2003EC53D /* AppDelegate.m in Sources */,
+				B782C955145D0BB2003EC53D /* ViewController.m in Sources */,
+				B782C960145D0C28003EC53D /* HSBackspaceFriendlyTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B782C94A145D0BB2003EC53D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B782C94B145D0BB2003EC53D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B782C956145D0BB2003EC53D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B782C957145D0BB2003EC53D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B782C959145D0BB2003EC53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B782C95A145D0BB2003EC53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B782C95C145D0BB2003EC53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/HSBackspaceFriendlyTextField-Prefix.pch";
+				INFOPLIST_FILE = "Demo/HSBackspaceFriendlyTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = HSBackspaceFriendlyTextField;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B782C95D145D0BB2003EC53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/HSBackspaceFriendlyTextField-Prefix.pch";
+				INFOPLIST_FILE = "Demo/HSBackspaceFriendlyTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = HSBackspaceFriendlyTextField;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B782C937145D0BB1003EC53D /* Build configuration list for PBXProject "HSBackspaceFriendlyTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B782C959145D0BB2003EC53D /* Debug */,
+				B782C95A145D0BB2003EC53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B782C95B145D0BB2003EC53D /* Build configuration list for PBXNativeTarget "HSBackspaceFriendlyTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B782C95C145D0BB2003EC53D /* Debug */,
+				B782C95D145D0BB2003EC53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B782C934145D0BB1003EC53D /* Project object */;
+}
