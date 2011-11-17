@@ -20,7 +20,7 @@ static void *BackwardDeleteTargetKey = &BackwardDeleteTargetKey;
 
 @implementation HSBackspaceFriendlyTextField
 
-- (void)my_didDeleteBackward {
+- (void)my_willDeleteBackward {
 	
 	// Check if the cursor is at the start of the field.
 	UITextRange *selectedRange = self.selectedTextRange;
@@ -91,7 +91,7 @@ static void *BackwardDeleteTargetKey = &BackwardDeleteTargetKey;
 - (void)fieldEditor_deleteBackward {
 	
 	HSBackspaceFriendlyTextField *textField = objc_getAssociatedObject(self, BackwardDeleteTargetKey);
-	[textField my_didDeleteBackward];
+	[textField my_willDeleteBackward];
 	
 	Class superclass = class_getSuperclass([self class]);
 	SEL deleteBackwardSEL = @selector(deleteBackward);
