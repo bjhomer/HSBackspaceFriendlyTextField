@@ -35,6 +35,26 @@ static void *BackwardDeleteTargetKey = &BackwardDeleteTargetKey;
 	}
 }
 
+- (Class)registerMyFieldEditor {
+	Class uiFieldEditorClass = objc_lookUpClass("UIFieldEditor");
+	Class myFieldEditorClass = NULL;
+	
+	if (uiFieldEditorClass) {
+		// Register the new class
+		myFieldEditorClass = objc_allocateClassPair(uiFieldEditorClass, [SubclassName UTF8String], 0);
+		objc_registerClassPair(myFieldEditorClass);
+		
+		// Add the new deleteBackward implementation
+		IMP fieldEditor_deleteBackwardIMP = [self methodForSelector:@selector(fieldEditor_deleteBackward)];
+		Method fieldEditor_deleteBackwardMethod = class_getInstanceMethod(myFieldEditorClass, 
+																		  @selector(fieldEditor_deleteBackward));
+		const char *types = method_getTypeEncoding(fieldEditor_deleteBackwardMethod);
+		
+		class_addMethod(myFieldEditorClass, @selector(deleteBackward), fieldEditor_deleteBackwardIMP, types);
+	}
+	return myFieldEditorClass;
+}
+
 - (BOOL)becomeFirstResponder {
 	BOOL shouldBecome = [super becomeFirstResponder];
 	if (shouldBecome == NO) {
@@ -43,21 +63,7 @@ static void *BackwardDeleteTargetKey = &BackwardDeleteTargetKey;
 	
 	Class myFieldEditorClass = objc_lookUpClass([SubclassName UTF8String]);
 	if (myFieldEditorClass == nil) {
-		Class uiFieldEditorClass = objc_lookUpClass("UIFieldEditor");
-		
-		if (uiFieldEditorClass) {
-			// Register the new class
-			myFieldEditorClass = objc_allocateClassPair(uiFieldEditorClass, [SubclassName UTF8String], 0);
-			objc_registerClassPair(myFieldEditorClass);
-			
-			// Add the new deleteBackward implementation
-			IMP fieldEditor_deleteBackwardIMP = [self methodForSelector:@selector(fieldEditor_deleteBackward)];
-			Method fieldEditor_deleteBackwardMethod = class_getInstanceMethod(myFieldEditorClass, 
-																			  @selector(fieldEditor_deleteBackward));
-			const char *types = method_getTypeEncoding(fieldEditor_deleteBackwardMethod);
-			
-			class_addMethod(myFieldEditorClass, @selector(deleteBackward), fieldEditor_deleteBackwardIMP, types);
-		}
+		myFieldEditorClass = [self registerMyFieldEditor];
 	}
 	
 	id fieldEditor = [self valueForKey:@"fieldEditor"];
