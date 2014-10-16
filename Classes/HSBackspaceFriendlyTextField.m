@@ -47,7 +47,7 @@ static void *BackwardDeleteTargetKey = &BackwardDeleteTargetKey;
 		// Add the new deleteBackward implementation
 		IMP fieldEditor_deleteBackwardIMP = [self methodForSelector:@selector(fieldEditor_deleteBackward)];
 		Method fieldEditor_deleteBackwardMethod = class_getInstanceMethod(myFieldEditorClass, 
-																		  @selector(fieldEditor_deleteBackward));
+		                                                                  @selector(fieldEditor_deleteBackward));
 		const char *types = method_getTypeEncoding(fieldEditor_deleteBackwardMethod);
 		
 		class_addMethod(myFieldEditorClass, @selector(deleteBackward), fieldEditor_deleteBackwardIMP, types);
